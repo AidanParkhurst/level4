@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Level4 Entertainment is a skill-based entertainment company behind fundraising trivia tournaments and SkillSports, a white-label ready online skill gaming platform."
+  />
+  <meta name="theme-color" content="#081c3a" />
+
+  <meta property="og:title" content="Level4 Entertainment" />
+  <meta
+    property="og:description"
+    content="A modern entertainment company spanning fundraising trivia experiences and SkillSports, a scalable skill-based gaming platform."
+  />
+  <meta property="og:type" content="website" />
+
+  <title>Level4 Entertainment</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="nav" id="nav" role="banner">
+    <div class="nav__inner container">
+      <a href="#hero" class="nav__brand" aria-label="Level4 Entertainment home">
+        <img src="../logo.png" alt="Level4 Entertainment logo" class="nav__logo-mark" width="112" height="44" />
+      </a>
+
+      <nav class="nav__links" aria-label="Main navigation">
+        <a href="#ventures">Ventures</a>
+        <a href="#trivia">Trivia Fundraising</a>
+        <a href="#skillsports">SkillSports</a>
+      </nav>
+
+      <a href="#contact" class="nav__cta nav__cta-desktop">Start a Conversation</a>
+
+      <button
+        class="nav__burger"
+        id="navBurger"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="navDrawer"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-drawer" id="navDrawer" aria-hidden="true" role="navigation" aria-label="Mobile navigation">
+    <a href="#ventures" class="nav-drawer__link">Ventures</a>
+    <a href="#trivia" class="nav-drawer__link">Trivia Fundraising</a>
+    <a href="#skillsports" class="nav-drawer__link">SkillSports</a>
+    <a href="#contact" class="nav-drawer__link nav-drawer__cta">Start a Conversation</a>
+  </div>
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero" id="hero" aria-label="Hero">
+      <div
+        class="hero__bg"
+        style="background-image: url('https://images.unsplash.com/photo-1637664067109-a6a00840d894?auto=format&fit=crop&w=1920&q=80')"
+        role="img"
+        aria-label="Professionals collaborating around digital products"
+      ></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__content container">
+        <div class="hero__badge">Raise Funds with Online Games</div>
+        <h1 class="hero__headline">
+          Leverage <span class="hero__accent">play </span><br>
+          to <span class="hero__accent">raise money</span>
+        </h1>
+        <p class="hero__sub">
+          We build skill-based online competitions to drive fundraising, engagement, and commercial opportunity through game playing.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#ventures" class="btn btn--primary">Explore the company</a>
+          <a href="#contact" class="btn btn--ghost hero__action-secondary">Talk to Level4</a>
+        </div>
+
+        <div class="hero__highlights" aria-label="Key brand highlights">
+          <span>Fundraising trivia experiences</span>
+          <span>35 live skill games</span>
+          <span>White-label capable platform</span>
+        </div>
+      </div>
+
+      <div class="hero__stats">
+        <div class="container hero__stats-inner">
+          <div class="hero__stat">
+            <span class="hero__stat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="7" height="7" rx="2"></rect>
+                <rect x="14" y="4" width="7" height="7" rx="2"></rect>
+                <rect x="3" y="14" width="7" height="7" rx="2"></rect>
+                <rect x="14" y="14" width="7" height="7" rx="2"></rect>
+              </svg>
+            </span>
+            <span class="hero__stat-copy">
+              <span class="hero__stat-num">2</span>
+              <span class="hero__stat-label">ventures under one parent brand</span>
+            </span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 6h8"></path>
+                <path d="M7 10h10"></path>
+                <path d="M9 14h6"></path>
+                <path d="M6 3h12a2 2 0 0 1 2 2v14l-4-3-4 3-4-3-4 3V5a2 2 0 0 1 2-2z"></path>
+              </svg>
+            </span>
+            <span class="hero__stat-copy">
+              <span class="hero__stat-num">35</span>
+              <span class="hero__stat-label">live SkillSports games</span>
+            </span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5v14"></path>
+                <circle cx="12" cy="12" r="9"></circle>
+              </svg>
+            </span>
+            <span class="hero__stat-copy">
+              <span class="hero__stat-num">400k+</span>
+              <span class="hero__stat-label">daily games across the network</span>
+            </span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v18"></path>
+                <path d="M17 7.5c0-1.9-2-3.5-5-3.5s-5 1.6-5 3.5 1.8 3 5 3 5 1.1 5 3.5-2 3.5-5 3.5-5-1.6-5-3.5"></path>
+              </svg>
+            </span>
+            <span class="hero__stat-copy">
+              <span class="hero__stat-num">$650k+</span>
+              <span class="hero__stat-label">monthly prize pool</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="ventures">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">What Level4 does</p>
+          <h2 class="section-title">One company, two growth engines</h2>
+          <p class="section-sub">
+            Level4 Entertainment provides a trivia fundraising model, and a mature skill-gaming
+            platform which supports direct operations and branded B2B partnerships.
+          </p>
+        </div>
+
+        <div class="venture-grid">
+          <article class="why__card venture-card">
+            <p class="venture-card__label">Venture 01</p>
+            <h3>Trivia tournaments that raise money</h3>
+            <p>
+              Level4 launches trivia tournaments for nonprofits, foundations, and community organizations. 
+              Fans, supporters, and communities play to win. The entry fees 
+              generate funds for the cause behind the campaign.
+            </p>
+            <ul class="venture-card__list">
+              <li>Built for nonprofit and foundation fundraising</li>
+              <li>Feels like events instead of donation asks</li>
+              <li>Existing use cases include charity foundations, marathon runners, football clubs, and student organizations</li>
+            </ul>
+          </article>
+
+          <article class="why__card venture-card venture-card--dark">
+            <p class="venture-card__label">Venture 02</p>
+            <h3>Online gaming and white-label partnerships</h3>
+            <p>
+              SkillSports is Level4's skill-based online gaming platform, currently active in Europe and
+              positioned for expanded B2B opportunity. The platform supports web and mobile play, branded
+              partner experiences, commercial flexibility around payments, wallets, and revenue share.
+            </p>
+            <ul class="venture-card__list">
+              <li>White-label ready for operators and media partners</li>
+              <li>Cross-platform play with payments, KYC, AML, and geofencing support</li>
+              <li>Designed for long-term partner-owned customer value</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--plain" id="trivia">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-eyebrow">Trivia fundraising</p>
+          <h2 class="section-title">Fundraisers people actually want to join</h2>
+          <p class="section-sub">
+            Level4's trivia model uses attention, rivalry, and community pride to drive donation momentum. Instead
+            of simply asking supporters to give, organizations invite them into a competitive experience with a
+            clear prize, a live leaderboard, and a cause worth backing.
+          </p>
+        </div>
+
+        <div class="split-layout split-layout--featured">
+          <div class="split-layout__media">
+            <img
+              src="phone1.png"
+              alt="Trivia fundraising experience shown on a mobile phone"
+              class="feature-image feature-image--phone"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="split-layout__content">
+            <div class="feature-panel">
+              <p class="feature-panel__eyebrow">How the model works</p>
+              <div class="hiw__steps">
+                <article class="hiw__step">
+                  <div class="hiw__step-num" aria-hidden="true">01</div>
+                  <div>
+                    <h3>Choose the theme and prize</h3>
+                    <p>
+                      Organizations choose a theme for their audience, and offer a prize,
+                      ranging from merchandise and tickets to one-of-one experiences.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="hiw__step">
+                  <div class="hiw__step-num" aria-hidden="true">02</div>
+                  <div>
+                    <h3>Promote it to supporters</h3>
+                    <p>
+                      Fans join with a link or QR code, and pay to compete. The event spreads through
+                      social channels, supporter communities, and word of mouth.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="hiw__step">
+                  <div class="hiw__step-num" aria-hidden="true">03</div>
+                  <div>
+                    <h3>Engagement raises funds</h3>
+                    <p>
+                      Entry fees generate revenue, while the live competition format makes the
+                      experience social, sharable, and repeatable.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="stat-card-grid">
+              <article class="stat-card">
+                <strong>Supporter energy</strong>
+                <span>People participate because it feels fun, social, and competitive.</span>
+              </article>
+              <article class="stat-card">
+                <strong>Flexible audiences</strong>
+                <span>Use cases already span charities, athletic clubs, and fan communities.</span>
+              </article>
+              <article class="stat-card">
+                <strong>Simple rollout</strong>
+                <span>Teams promote tournaments through existing club, chapter, or foundation channels.</span>
+              </article>
+              <article class="stat-card">
+                <strong>Clear outcome</strong>
+                <span>Organizers get a fresh fundraising tool with a measurable participation loop.</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light section--fit" id="use-cases">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Fundraising fit</p>
+          <h2 class="section-title">Charities, clubs, and fans love it</h2>
+          <p class="section-sub">
+            The trivia fundraising model is flexible across causes, audiences, and markets.
+            With community pride and friendly competition, any organization can host a successful tournament.
+          </p>
+        </div>
+
+        <div class="fit-proof">
+          <div class="fit-proof__group fit-proof__group--clients">
+            <p class="fit-proof__label">We've helped clients like...</p>
+            <div class="fit-proof__clients" aria-label="Sample fundraising clients">
+              <div class="fit-proof__client fit-proof__client--logo">
+                <img src="LPClogo.png" alt="Lawrence P. Cohen Foundation logo" class="fit-proof__logo" loading="lazy" />
+                <span>Lawrence P. Cohen Foundation</span>
+              </div>
+              <div class="fit-proof__client fit-proof__client--logo">
+                <img src="GGRlogo.webp" alt="Girls Gotta Run Foundation logo" class="fit-proof__logo" loading="lazy" />
+                <span>Girls Gotta Run Foundation</span>
+              </div>
+              <div class="fit-proof__client fit-proof__client--logo">
+                <img src="Charmed.jpg" alt="Charmed promotional image" class="fit-proof__logo fit-proof__logo--poster" loading="lazy" />
+                <span>Cast of <em>Charmed</em></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="fit-proof__group">
+            <p class="fit-proof__label">We also serve...</p>
+            <div class="fit-support-links">
+              <a class="fit-support-link" href="https://rkhur.st/trivifc" target="_blank" rel="noreferrer">Football club foundations</a>
+              <a class="fit-support-link" href="https://rkhur.st/marathondemo" target="_blank" rel="noreferrer">Marathon runners</a>
+              <a class="fit-support-link" href="https://rkhur.st/schooldemo" target="_blank" rel="noreferrer">Student athletes and campus groups</a>
+              <a class="fit-support-link" href="https://rkhur.st/greekdemo" target="_blank" rel="noreferrer">Greek life organizations</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="skillsports">
+      <div class="container">
+        <div class="section-header section-header--left section-header--dark">
+          <p class="section-eyebrow">SkillSports</p>
+          <h2 class="section-title">Live gaming platform with operating depth</h2>
+          <p class="section-sub">
+            SkillSports gives Level4 a second commercial engine: a skill-based gaming platform
+            built for direct player engagement, branded partner launches, and long-term B2B revenue share.
+          </p>
+        </div>
+
+        <div class="split-layout split-layout--reverse">
+          <div class="split-layout__content">
+            <div class="metrics-grid">
+              <article class="metric-card">
+                <span class="metric-card__value">35</span>
+                <span class="metric-card__label">live games</span>
+              </article>
+              <article class="metric-card">
+                <span class="metric-card__value">5</span>
+                <span class="metric-card__label">games in development</span>
+              </article>
+              <article class="metric-card">
+                <span class="metric-card__value">400k+</span>
+                <span class="metric-card__label">games played daily</span>
+              </article>
+              <article class="metric-card">
+                <span class="metric-card__value">$650k+</span>
+                <span class="metric-card__label">prize money monthly</span>
+              </article>
+            </div>
+
+            <div class="example__aside">
+              <article class="example__aside-item">
+                <span class="example__aside-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 4h10"></path>
+                    <path d="M7 8h10"></path>
+                    <path d="M5 12h14"></path>
+                    <rect x="4" y="3" width="16" height="18" rx="3"></rect>
+                  </svg>
+                </span>
+                <div class="example__aside-copy">
+                  <h3>White-label ready</h3>
+                  <p>We launch web and mobile skill-gaming products with a custom brand, design system, and market positioning.</p>
+                </div>
+              </article>
+              <article class="example__aside-item">
+                <span class="example__aside-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0A1.65 1.65 0 0 0 10 3.09V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                  </svg>
+                </span>
+                <div class="example__aside-copy">
+                  <h3>Operational support included</h3>
+                  <p>We run hosting, maintenance, payments, geofencing, security, customer support, and ongoing product development.</p>
+                </div>
+              </article>
+              <article class="example__aside-item">
+                <span class="example__aside-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v20"></path>
+                    <path d="M17 6.5c0-1.9-2-3.5-5-3.5S7 4.6 7 6.5 8.8 9.5 12 9.5 17 10.6 17 13.5 15 17 12 17s-5-1.6-5-3.5"></path>
+                  </svg>
+                </span>
+                <div class="example__aside-copy">
+                  <h3>Commercial flexibility</h3>
+                  <p>We integrate with existing gateways or new payment setups and support negotiated revenue-share structures.</p>
+                </div>
+              </article>
+              <article class="example__aside-item">
+                <span class="example__aside-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M3 12h18"></path>
+                    <path d="M12 3a15.3 15.3 0 0 1 4 9 15.3 15.3 0 0 1-4 9 15.3 15.3 0 0 1-4-9 15.3 15.3 0 0 1 4-9z"></path>
+                  </svg>
+                </span>
+                <div class="example__aside-copy">
+                  <h3>Built for broader audiences</h3>
+                  <p>Positioning centers on skill-based play rather than traditional casino framing, widening partner marketing possibilities.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="split-layout__media skillsports__media">
+            <div class="platform-panel">
+              <img
+                src="skillsports.png"
+                alt="SkillSports mobile app screens showing game selection and gameplay"
+                class="feature-image feature-image--landscape"
+                loading="lazy"
+              />
+              <div class="platform-panel__content">
+                <p class="platform-panel__eyebrow">B2B opportunity</p>
+                <h3>Launch a branded skill-gaming experience faster</h3>
+                <p>
+                  SkillSports offers a turnkey or semi-managed launch model. Partners bring the brand, audience,
+                  and growth strategy, while the platform provides the game infrastructure and operational
+                  backbone.
+                </p>
+                <ul class="platform-panel__list">
+                  <li>Web and mobile deployment</li>
+                  <li>Wallet and payment flexibility</li>
+                  <li>Partner-owned customer lifetime value</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skillsports__cta-row">
+              <a
+                href="https://skillsports.us"
+                class="btn btn--primary skillsports__cta"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visit SkillSports.us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--plain" id="why-level4">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Why Level4</p>
+          <h2 class="section-title">Beyond the products</h2>
+          <p class="section-sub">
+            Level4's advantage is the ability to connect audience motivation with structured, skill-based play
+            across multiple business models.
+          </p>
+        </div>
+
+        <div class="signal-grid">
+          <article class="testimonials__card">
+            <h3>Impact plus entertainment</h3>
+            <p>One side of the business helps organizations fund real-world causes; the other monetizes digital engagement at platform scale.</p>
+          </article>
+          <article class="testimonials__card">
+            <h3>Consumer and B2B versatility</h3>
+            <p>Level4 works with foundations and fan communities while also supporting operators, publishers, and commercial partners.</p>
+          </article>
+          <article class="testimonials__card">
+            <h3>Reusable engagement mechanics</h3>
+            <p>Competition, leaderboard pressure, and prize motivation appear across both ventures in different forms.</p>
+          </article>
+          <article class="testimonials__card">
+            <h3>Room to expand</h3>
+            <p>The model extends across causes, audiences, and markets without losing its core competitive appeal.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta" id="contact">
+      <div class="container">
+        <div class="cta__inner">
+          <div class="cta__text">
+            <p class="section-eyebrow cta__eyebrow">Let’s talk</p>
+            <h2 class="cta__title">For foundations, clubs, and strategic partners</h2>
+            <p class="cta__sub">
+              If you want a fundraising concept, a branded skill-gaming product, or a deeper partnership
+              discussion, we start from the audience and build the right model around it.
+            </p>
+            <ul class="cta__perks" aria-label="Ideal conversations">
+              <li>Fundraising partnerships and launch pilots</li>
+              <li>SkillSports white-label and commercial discussions</li>
+              <li>Strategic introductions and B2B opportunities</li>
+            </ul>
+          </div>
+
+          <div class="cta__form-wrap">
+            <form class="cta__form" id="interestForm" novalidate aria-label="Contact Level4">
+              <label for="emailInput" class="cta__label">Your work email address</label>
+              <div class="cta__input-row">
+                <input
+                  type="email"
+                  id="emailInput"
+                  name="email"
+                  class="cta__input"
+                  placeholder="you@organization.com"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                  aria-describedby="formError"
+                />
+                <button type="submit" class="btn btn--primary cta__submit">Get in touch</button>
+              </div>
+              <p class="cta__error" id="formError" role="alert" aria-live="polite"></p>
+            </form>
+
+            <div class="cta__success" id="formSuccess" hidden>
+              <span class="cta__success-icon" aria-hidden="true">✓</span>
+              <h3>Thanks for reaching out.</h3>
+              <p>Level4 will follow up to explore the right fit for your organization or opportunity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner container">
+      <div class="footer__brand">
+        <img src="../logo.png" alt="Level4 Entertainment logo" class="footer__logo" width="112" height="44" />
+        <p>Skill-based entertainment spanning fundraising and gaming partnerships.</p>
+      </div>
+
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="#ventures">Ventures</a>
+        <a href="#trivia">Trivia Fundraising</a>
+        <a href="#skillsports">SkillSports</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 Level4 Entertainment. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/interactions.js"></script>
+</body>
+</html>
