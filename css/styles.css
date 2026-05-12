@@ -890,28 +890,33 @@ p {
 }
 
 .cta {
-  background: linear-gradient(180deg, var(--surface), var(--surface-2));
+  background: var(--blue-950);
 }
 
 .cta__inner {
   display: grid;
   gap: 1.4rem;
   padding: 1.6rem;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-lg);
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.07);
   box-shadow: var(--shadow-lg);
 }
 
 .cta__title {
   max-width: 18ch;
   margin-bottom: 1rem;
-  color: var(--blue-950);
+  color: var(--white);
   font-size: clamp(1.85rem, 3.6vw, 2.9rem);
 }
 
 .cta__sub {
   margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.cta__perks li {
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .cta__form-wrap {
@@ -922,13 +927,14 @@ p {
   align-self: center;
   padding: 1.5rem;
   border-radius: var(--radius);
-  background: var(--surface);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .cta__label {
   display: block;
   margin-bottom: 0.75rem;
-  color: var(--blue-950);
+  color: var(--white);
   font-weight: 700;
 }
 
@@ -988,8 +994,12 @@ p {
 
 .cta__success h3 {
   margin-bottom: 0.55rem;
-  color: var(--blue-950);
+  color: var(--white);
   font-size: 1.45rem;
+}
+
+.cta__success p {
+  color: rgba(255, 255, 255, 0.76);
 }
 
 .footer {
